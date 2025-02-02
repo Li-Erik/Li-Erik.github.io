@@ -1,56 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Erik Li</title>
-    <link rel="stylesheet" type="text/css" href="profile.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <h1 style="font-size: 12vw" id="bigtitle"><a onmouseover="showTitle(about)" onmouseout="hideTitle(about)" class="letters" id="E" href="About.html">E</a><a onmouseover="showTitle(resume)" onmouseout="hideTitle(resume)" class="letters" id="R" href="resume-slash-cv.pdf">R</a><a href="comingsoon.html" onmouseover="showTitle(projects)" onmouseout="hideTitle(projects)" class="letters" id="I">I</a><a href="comingsoon.html" onmouseover="showTitle(artwork)" onmouseout="hideTitle(artwork)" class="letters" id="K">K</a><a id="letters"> </a><a href="comingsoon.html" onmouseover="showTitle(photo)" onmouseout="hideTitle(photo)" class="letters" id="L">L</a><a href="comingsoon.html" onmouseover="showTitle(blog)" onmouseout="hideTitle(blog) "class="letters" id="I">I</a><button onclick="location.href='index.html'" type="button" id="backbutton"><span style="font-size: 1vw;" class="material-symbols-outlined">home</span></button>
-    </h1>
-    <div style="font-size: 3.5vw" id="tabs">
-      <a class="category" id="about">
-        About
-      </a>
-      <a class="category" id="resume">
-        Resume
-      </a>
-      <a class="category" id="projects">
-        Projects
-      </a>
-      <a class="category" id="artwork">
-        Artwork
-      </a>
-      <a class="category" id="photo">
-        Photography
-      </a>
-      <a class="category" id="blog">
-        Blog
-      </a>
-      <a class="category" id="beginning">
-        Try Hovering Over...
-      </a>
-    </div>
-    <script>
-      hideTitle(about);
-      hideTitle(resume);
-      hideTitle(projects);
-      hideTitle(artwork);
-      hideTitle(photo);
-      hideTitle(blog);
-      function showTitle(x){
-        x.style.opacity=1;
-        hideTitle(beginning); 
-      }
-      function hideTitle(x){
-        x.style.opacity=0;
-      }
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erik Li – Professional Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
+    nav { background: #444; padding: 0.5rem; text-align: center; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .container { max-width: 960px; margin: auto; padding: 1rem; background: #fff; }
+    section { margin: 2rem 0; }
+    .bio { text-align: justify; }
+    .visuals { display: flex; justify-content: space-around; flex-wrap: wrap; }
+    .vis { display: flex; justify-content: space-around; flex-wrap: wrap; }
+    .vis img { max-width: 15%; margin: 1rem 0; border-radius: 5px; }
+    .visuals img { max-width: 30%; margin: 1rem 0; border-radius: 5px; }
+    footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+    hr { border: 1px solid #ccc; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Erik Li</h1>
+    <p>Software Engineer | Researcher | Computer Science Undergrad</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resume">Résumé</a>
+    <a href="#coverletter">Cover Letter</a>
+    <a href="#projects">Projects & Documents</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <div class="container" id="home">
+    <section>
+      <h2>About Me</h2>
+      <p class="bio">I’m Erik Li, a Computer Science major at Georgia Tech pursuing a B.S. and M.S. with a focus on AI/ML. I have honed my skills through internships at Amazon Web Services and Wabtec, where I developed scalable, cloud-native solutions that support billions of daily transactions. My diverse experiences include machine learning research, cryptographic security system design, and full-stack development. I strive to combine technical excellence with creative problem-solving to build systems that drive real-world impact. Whether I’m optimizing operational workflows or developing predictive models, my goal is to create technology that is both innovative and reliable. At school, I've also been a member of part of various research groups, programs, and clubs such as VIP and Big Data Big Impact.</p>
+      <p class="bio">I'm actively seeking opportunities in software development and machine learning where I can apply my knowledge and make an impact. </p>
+      <div class="vis">
+        <img src="gts.jpg" alt="GT Logo">
+        <img src="exps.jpg" alt="Experiences">
+        <img src="clubs.jpg" alt="Clubs">
+      </div>
+    </section>
+    <hr>
+    <section id="resume">
+      <h2>Résumé / CV</h2>
+      <p>Please download my résumé for complete details on my experience and skills.</p>
+      <a href="Resume_Official_Erik_Li copy.pdf" target="_blank">Download Résumé (PDF)</a>
+    </section>
+    <hr>
+    <section id="coverletter">
+      <h2>Cover Letter</h2>
+      <p>Please download my cover letter.</p>
+      <a href="cov.pdf" target="_blank">Download Cover Letter (PDF)</a>
+    </section>
+    <hr>
+    <section id="projects">
+      <h2>Projects & Professional Documents</h2>
+      <div>
+        <h3>Project 1: Parkinson's Disease Diagnosis App</h3>
+        <p>A program that uses a user-drawn image of a spiral to predict if they have Parkinson's disease through the use of a trained dataset with high accuracy. By extracting key visual features and implementing classification models, I improved diagnostic accuracy and streamlined data preprocessing. This project highlights my ability to apply AI techniques to real-world medical challenges, showcasing my passion for impactful, data-driven solutions in healthcare.</p>
+        <div class="visuals">
+          <img src="parkinson.png" alt="parkinson project">
+        </div>
+        <a href="https://github.com/Li-Erik/Parkinson-Machine-Learning-Predictor" target="_blank">Github Link</a>
+      </div>
+      <hr>
+      <div>
+        <h3>Project 2: Locomotive Inspection System at Wabtec</h3>
+        <p>I contributed to an AI-driven inspection system for locomotive equipment, improving efficiency by over 200% through innovative train tag decoding and machine learning integration. This document details my role, technical contributions, and the impact of the project on operational performance.</p>
+        <div class="visuals">
+          <img src="wabtec.png" alt="wabtec project">
+        </div>
+        <a href="wab.pdf" target="_blank">Project Presentation</a>
+      </div>
+    </section>
+    <hr>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you’d like to connect, please email me at <a href="mailto:erik.li@gatech.edu">erik.li@gatech.edu</a> or use the form below.</p>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Erik Li. All rights reserved.</p>
+  </footer>
+</body>
 </html>
